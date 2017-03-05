@@ -27,12 +27,20 @@ $(function(){
  	});
 	/* placeholder*/
 
-	$('.button-nav').click(function(){
+	$('.navigation__item--main').click(function(){
 		$(this).toggleClass('active'), 
-		$('.main-nav-list').slideToggle(); 
+		$('.navigation__submenu').slideToggle();
 		return false;
 	});
-	
+
+    $('.navigation__subitem--main').hover(function(){
+        $(this).toggleClass('active'),
+			// console.log($(this).children());
+            $(this).find('.navigation__submenu-nested').slideToggle();
+        return false;
+    });
+
+
 
 });
 

@@ -1,76 +1,167 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="format-detection" content="telephone=no">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-	<title>Home Page</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css" />		
-	<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->		
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <title>Home Page</title>
+    <!--<link rel="stylesheet" type="text/css" href="css/normalize.css"/>-->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fonts.css"/>
+    <link rel="stylesheet" type="text/css" href="css/lib/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <!--[if lt IE 9]>
+    <script src="js/html5.js"></script><![endif]-->
 </head>
 <body class="loaded">
 
-							
+
 <!-- BEGIN BODY -->
 
 <div class="main-wrapper">
+    <!-- BEGIN CONTENT -->
+    <main class="content">
+        <section class="content__slider">
+            <div class="slider">
+                <div class="slider__item-1"><p class="slider__description">Новая коллекция <br> SWAROVSKI уже здесь!</p></div>
+                <div class="slider__item-2"><p class="slider__description">Новая коллекция <br> SWAROVSKI уже здесь 2!</p></div>
+                <div class="slider__item-3"><p class="slider__description">Новая коллекция <br> SWAROVSKI уже здесь 3!</p></div>
+            </div>
+            <div class="slider__prev-button"></div>
+            <div class="slider__next-button"></div>
+        </section>
+        <section class="box-products">
+            <div class="wrapper">
 
-<!-- BEGIN CONTENT -->
+            </div>
+        </section>
 
-	<main class="content">
-	
-		<section class="box-contact">
-			<div class="wrapper">
-				
-			</div>
-		</section>
-		<section class="box-products">
-			<div class="wrapper">
-				
-			</div>
-		</section>	
-		
-		<div class="wrapper">
-			<section class="box-inf">
-				
-			</section>
-			<section class="box-inf">
-				
-			</section>
-		</div>
-				
-	</main>	
-			
-<!-- CONTENT EOF   -->
+        <div class="wrapper">
+            <section class="box-inf">
 
-<!-- BEGIN HEADER -->
+            </section>
+            <section class="box-inf">
 
-	<header>
-		<div class="wrapper">
-			
-		</div>
-	</header>
-	
-<!-- HEADER EOF   -->	
+            </section>
+        </div>
 
-<!-- BEGIN FOOTER -->	
-	
-	<footer>
-		<div class="wrapper">
-			
-		</div>	
-	</footer>
-	
-<!-- FOOTER EOF   -->
+    </main>
 
-</div>		
+    <!-- CONTENT EOF   -->
 
-<div class="icon-load"></div>		
+    <!-- BEGIN HEADER -->
+
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__info-row-top">
+                <div class="header__logo">
+                    <div class="logo">
+                        <img class="logo__img" alt="Благой арт" src="img/logo.png">
+                        <p class="logo__tagline">Интернет-магазин &#171;Благой арт&#187;</p>
+                    </div>
+                </div>
+                <div class="header__search">
+                    <form action="" class="search">
+                        <input type="text" class="search__input" placeholder="Введите название или артикул">
+                    </form>
+                </div>
+                <div class="header__contacts">
+                    <div class="phone">
+                        <a href="skype:+7 (800) 707-81-39" class="phone__link" cm_dontconvertlink="cm_dontconvertlink">+7
+                            (800) 707-81-39</a>
+                    </div>
+                </div>
+                <div class="header__shedule">
+                    <div class="shedule">
+                        <p class="shedule__time">ПН-ПТ с 9:00 до 18:00</p>
+                        <p class="shedule__delivery">Доставка по РФ и СНГ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header__info-row-bottom">
+                <nav class="header__navigation">
+                    <ul class="navigation">
+                        <li class="navigation__item navigation__item--main"><a href="#">Каталог товаров</a>
+                            <ul class="navigation__submenu">
+                                <li class="navigation__subitem navigation__subitem--main"><a href="#" class="navigation__subitem-link">Свадебная бижутерия</a>
+                                    <ul class="navigation__submenu navigation__submenu-nested">
+                                        <hgroup class="navigation__header">
+                                            <h3 class="navigation-header">Свадебная бижутерия</h3>
+                                        </hgroup>
+                                        <li class="navigation__subitem"><a class="navigation__subitem-link" href="#">Браслеты</a></li>
+                                        <li class="navigation__subitem"><a class="navigation__subitem-link" href="#">Кулоны</a></li>
+                                        <li class="navigation__subitem"><a class="navigation__subitem-link" href="#">Зажимы и запонки</a></li>
+                                    </ul>
+                                </li>
+                                <li class="navigation__subitem"><a href="#" class="navigation__subitem-link">Аксессуары для волос</a></li>
+                                <li class="navigation__subitem"><a href="#" class="navigation__subitem-link">Броши</a></li>
+                                <li class="navigation__subitem navigation__subitem--main"><a href="#" class="navigation__subitem-link">Мужские аксессуары</a>
+                                    <ul class="navigation__submenu navigation__submenu-nested">
+                                        <hgroup class="navigation__header">
+                                            <h3 class="navigation-header">Мужская бижутерия</h3>
+                                        </hgroup>
+                                        <li class="navigation__subitem"><a class="navigation__subitem-link" href="#">Браслеты</a></li>
+                                        <li class="navigation__subitem"><a class="navigation__subitem-link" href="#">Кулоны</a></li>
+                                        <li class="navigation__subitem"><a class="navigation__subitem-link" href="#">Зажимы и запонки</a></li>
+                                    </ul>
+                                </li>
+                                <li class="navigation__subitem"><a href="#" class="navigation__subitem-link">Клатчи</a></li>
+                                <li class="navigation__subitem"><a href="#" class="navigation__subitem-link">Детская бижутерия</a></li>
+                                <li class="navigation__subitem"><a href="#" class="navigation__subitem-link">Демонстрационное оборудование</a></li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item--regular"><a href="#">Условия работы</a></li>
+                        <li class="navigation__item--regular"><a href="#">Скидки</a></li>
+                        <li class="navigation__item--regular"><a href="#">Оплата и доставка</a></li>
+                        <li class="navigation__item--regular"><a href="#">Документы</a></li>
+                        <li class="navigation__item--regular"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__cart">
+                    <div class="cart">
+                        <a href="" class="cart__link">
+                            <span class="cart__number">10</span>
+                            <span class="cart__goods">Товаров &#47;</span>
+                            <span class="cart__ammount">56 789<span class="cart__currency">р</span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__enter">
+                    <div class="enter">
+                        <a href="" class="enter__link">Войти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HEADER EOF   -->
+
+    <!-- BEGIN FOOTER -->
+
+    <footer>
+        <div class="wrapper">
+
+        </div>
+    </footer>
+
+    <!-- FOOTER EOF   -->
+
+</div>
+
+<div class="icon-load"></div>
 
 <!-- BODY EOF   -->
-	
-	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>		
-	<script type="text/javascript" src="js/jquery-migrate.min.js" ></script>
-	<script type="text/javascript" src="js/custom.js" ></script>
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/lib/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+    //    $(window).on('focus', function () {
+    //        document.location.reload();
+    //    })
+</script>
 </body>
 </html>

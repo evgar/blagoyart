@@ -1,0 +1,95 @@
+.content {
+  width: 1355px;
+  margin: 0 auto;
+  &__slider {
+    position: relative;
+    padding: 10px 0 0 8px;
+  }
+}
+
+//Slider
+
+.slider {
+  position: relative;
+  width: 1355px;
+  margin: 0 auto;
+  &__item-1 {
+    background: url(../img/slider-1.jpg);
+    height: 326px;
+  }
+
+  &__item-2 {
+    background: url(../img/slider-2.jpg);
+    height: 326px;
+  }
+
+  &__item-3 {
+    background: url(../img/slider-3.jpg);
+    height: 326px;
+  }
+
+  &__prev-button {
+    position: absolute;
+    height: 130px;
+    width: 37px;
+    top: 108px;
+    background: rgba(211, 165, 112, 0.88) url('../img/arrow-left.png') no-repeat 9px;
+    cursor: pointer;
+    &:hover {
+      background: rgba(246, 245, 244, 0.88) url(../img/arrow-left-hover.png) no-repeat 9px;
+    }
+  }
+
+  &__next-button {
+    position: absolute;
+    height: 130px;
+    width: 37px;
+    right: -8px;
+    top: 109px;
+    background: rgba(211, 165, 112, 0.88) url('../img/arrow-right.png') no-repeat 12px;
+    cursor: pointer;
+    &:hover {
+      background: rgba(246, 245, 244, 0.88) url(../img/arrow-right-hover.png) no-repeat 12px;
+    }
+  }
+
+  &__description {
+    position: absolute;
+    padding: 12px 45px 16px 31px;
+    max-width: 60%;
+    font: 3.27em 'PT Sans';
+    color: #fff;
+    background: rgba(211, 165, 112, 0.88);
+    top: 99px;
+    left: 71px;
+    line-height: 1.19em;
+  }
+}
+
+
+
+//Slider (Slick plugin) native styles
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  padding: 45px 0 0 0;
+  list-style: none;
+}
+
+.slick-dots li button:before {
+  content: "";
+}
+
+.slick-dots li button {
+  border-radius: 10px;
+  background: #eedcc4;
+  font-size: 0;
+  padding: 9px;
+  border: none;
+  margin: 0 11px;
+}
+
+li.slick-active button {
+  background: #cb944c;
+}

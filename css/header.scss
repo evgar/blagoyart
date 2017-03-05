@@ -1,0 +1,262 @@
+.header {
+  display: flex;
+  flex-flow: column wrap;
+
+  &__wrapper {
+    width: 1242px;
+    margin: 0 auto;
+  }
+
+  &__info-row-top {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    border-bottom: 1px solid #dddfdf;
+    padding: 0 0 12px 0;
+  }
+
+  &__info-row-bottom {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      background: #dddfdf;
+      height: 1px;
+      top: 53px;
+
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    margin: 15px 0 0 21px;
+  }
+
+  &__logo {
+    margin: 34px 0 0 22px;
+  }
+
+  &__contacts {
+    margin: 35px 0 0 90px;
+  }
+
+  &__cart {
+    margin: 15px 0 0 136px;
+  }
+
+  &__enter {
+    margin: 16px 0 0 47px;
+  }
+}
+
+.logo {
+
+  &__tagline {
+    color: #747688;
+    font: 1.077em 'PT Sans';
+    padding: 0;
+    margin: 3px 0 0 0px;
+  }
+}
+
+.search {
+  margin: 29px 0 0 43px;
+
+  &__input {
+    width: 496px;
+    font: 1.077em 'PT Sans';
+    color: #b9b8bd;
+    border: 1px solid #b9b8bd;
+    border-radius: 4px;
+    background: url(../img/loupe.png) no-repeat 98.3% 9px;
+    padding: 10px 0 10px 9px;
+  }
+}
+
+.phone {
+  font: 1.77em 'PT Sans';
+  color: #181616;
+}
+
+.shedule {
+  font: 1.077em 'PT Sans';
+  margin: 35px 0 0 13px;
+  &__time {
+    padding: 0 0 0 0;
+    color: #cb944c;
+  }
+  &__delivery {
+    padding: 2px 0 0 0;
+    color: #2b3056;
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  cursor: pointer;
+
+  &__item {
+    font: 1.23em 'PT Sans';
+    font-weight: bold;
+    color: #181818;
+    text-transform: uppercase;
+    list-style-type: none;
+
+    &--main {
+      position: relative;
+      padding: 0 20px 0 28px;
+      background: url("../img/menu-icon.png") no-repeat 0% 5px, url("../img/catalog-icon.png") no-repeat 100% 7px;
+      max-width: 183px;
+    }
+
+    &--regular {
+      margin: 0 0 0 22px;
+      @extend .navigation__item
+    }
+  }
+
+  &__submenu {
+    position: absolute;
+    z-index: 10;
+    display: none;
+    width: 242px;
+    border: 1px solid #dddfdf;
+    top: 48px;
+    left: -12px;
+    padding: 14px 0 20px 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    -webkit-box-shadow: 2px 3px 1px rgba(108,104,104,.33);
+    -moz-box-shadow: 2px 3px 1px rgba(108,104,104,.33);
+    box-shadow: 2px 3px 1px rgba(108,104,104,.33);
+
+    &-nested {
+      top: 79px;
+      left: 244px;
+      display: block;
+    }
+  }
+
+  &__subitem {
+    position: relative;
+    display: flex;
+    font: 1.02em 'PT Sans';
+    color: #666666;
+    list-style-type: none;
+    text-transform: initial;
+    padding: 3px 0 6px 0;
+    letter-spacing: -0.6px;
+
+    &--main {
+      &:after {
+        position: absolute;
+        content: '';
+        background: url(../img/catalog-icon-right.png) no-repeat;
+        width: 8px;
+        height: 11px;
+        top: 9px;
+        right: 14px;
+      }
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      background: url('../img/list-point.png');
+      width: 6px;
+      height: 6px;
+      top: 12px;
+      left: 14px;
+    }
+
+    &:hover {
+      background: #e9e9ea;
+    }
+  }
+
+  &__subitem-link {
+    padding: 0 0 0 30px;
+  }
+
+  &__header {
+    margin: 2px 0 8px 16px;
+    word-spacing: 5px;
+  }
+}
+
+.navigation-header {
+  text-transform: uppercase;
+  font: 1em 'PT Sans';
+  color: #cb944c;
+}
+
+.cart {
+
+  &__link {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    color: #252a54;
+    text-transform: uppercase;
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 23px;
+      height: 23px;
+      background: url('../img/cart.png');
+      left: -36px;
+      top: -1px;
+    }
+  }
+
+  &__number {
+    background: #cb944c;
+    border-radius: 10px;
+    padding: 4px;
+    color: white;
+  }
+
+  &__goods {
+    font: 1.08em 'PT Sans';
+    font-weight: bold;
+    padding: 2px 0 0 8px;
+  }
+
+  &__ammount {
+    font: 1.23em 'PT Sans';
+    font-weight: bold;
+    padding-left: 7px;
+  }
+
+  &__currency {
+    padding-left: 6px;
+  }
+}
+
+.enter {
+  position: relative;
+  font: 1.23em 'PT Sans';
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #252a54;
+
+  &:before {
+    position: absolute;
+    content: '';
+    background: url('../img/enter.png');
+    width: 19px;
+    height: 17px;
+    top: 1px;
+    left: -26px;
+  }
+}

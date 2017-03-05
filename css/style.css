@@ -6,7 +6,7 @@
 body{ margin:0px; padding:0px; font-family:Tahoma,Arial, sans-serif;background-color:#FFFFFF; height:100%; position:relative; font-size:13px!important; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 /*MAIN*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, 
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
 header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; }
 /* HTML5 display-role reset for older browsers */
@@ -106,7 +106,7 @@ header{
 	position:absolute;
 	left:0px; top:0px;
 	z-index:1;}
-	
+
 
 
 /*
@@ -117,8 +117,7 @@ header{
 .content{
 	width:100%;
 	min-width: 320px;
-	text-align:left;
-	background:#000;}
+	text-align:left;}
 
 
 /*
@@ -127,8 +126,8 @@ header{
 ================================================================================
 */
 footer{
-	background:url(../img/bg_footer.jpg) no-repeat; 	
-	height:81px; 
+	background:url(../img/bg_footer.jpg) no-repeat;
+	height:81px;
 	text-align:left;
 	position:absolute;
 	left:0px; bottom:0px;
