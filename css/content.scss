@@ -1,9 +1,18 @@
 .content {
   width: 1355px;
   margin: 0 auto;
+
+  @include breakpoint($tablet_resolution) {
+    width: 768px;
+  }
+
   &__slider {
     position: relative;
     padding: 10px 0 0 8px;
+
+    @include breakpoint($tablet_resolution) {
+      padding: 0;
+    }
   }
 }
 
@@ -13,19 +22,36 @@
   position: relative;
   width: 1355px;
   margin: 0 auto;
+
+  @include breakpoint($tablet_resolution) {
+    height: 100px;
+    width: 752px;
+  }
   &__item-1 {
     background: url(../img/slider-1.jpg);
     height: 326px;
+
+    @include breakpoint($tablet_resolution) {
+      height: 165px;
+    }
   }
 
   &__item-2 {
     background: url(../img/slider-2.jpg);
     height: 326px;
+
+    @include breakpoint($tablet_resolution) {
+      height: 165px;
+    }
   }
 
   &__item-3 {
     background: url(../img/slider-3.jpg);
     height: 326px;
+
+    @include breakpoint($tablet_resolution) {
+      height: 165px;
+    }
   }
 
   &__prev-button {
@@ -35,8 +61,23 @@
     top: 108px;
     background: rgba(211, 165, 112, 0.88) url('../img/arrow-left.png') no-repeat 9px;
     cursor: pointer;
+
     &:hover {
       background: rgba(246, 245, 244, 0.88) url(../img/arrow-left-hover.png) no-repeat 9px;
+
+      @include breakpoint($tablet_resolution) {
+        background-size: 7px;
+        background-position: 5px;
+      }
+    }
+
+    @include breakpoint($tablet_resolution) {
+      height: 65px;
+      width: 17px;
+      top: 49px;
+      left: 9px;
+      background-size: 7px;
+      background-position: 5px;
     }
   }
 
@@ -48,8 +89,23 @@
     top: 109px;
     background: rgba(211, 165, 112, 0.88) url('../img/arrow-right.png') no-repeat 12px;
     cursor: pointer;
+
     &:hover {
       background: rgba(246, 245, 244, 0.88) url(../img/arrow-right-hover.png) no-repeat 12px;
+
+      @include breakpoint($tablet_resolution) {
+        background-size: 7px;
+        background-position: 5px;
+      }
+    }
+
+    @include breakpoint($tablet_resolution) {
+      height: 65px;
+      width: 17px;
+      top: 49px;
+      right: 8px;
+      background-size: 7px;
+      background-position: 5px;
     }
   }
 
@@ -63,6 +119,14 @@
     top: 99px;
     left: 71px;
     line-height: 1.19em;
+
+    @include breakpoint($tablet_resolution) {
+      padding: 7px 23px 8px 17px;
+      font: 1.9em 'PT Sans';
+      top: 49px;
+      left: 43px;
+      line-height: 1.01em;
+    }
   }
 }
 
@@ -75,6 +139,10 @@
   justify-content: center;
   padding: 45px 0 0 0;
   list-style: none;
+
+  //@include breakpoint($tablet_resolution) {
+  //  display: none;
+  //}
 }
 
 .slick-dots li button:before {
