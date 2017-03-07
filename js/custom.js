@@ -40,6 +40,13 @@ $(function(){
         return false;
     });
 
+    // $(document).click(function(){
+     //    $('.navigation__submenu').hide();
+     //    $('.navigation__submenu').removeClass('active');
+     //    $('.navigation__submenu-nested').hide();
+     //    $('.navigation__submenu-nested').removeClass('active');
+	// });
+
 
 
 });

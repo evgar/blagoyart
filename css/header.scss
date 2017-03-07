@@ -1,13 +1,15 @@
 .header {
-  display: flex;
-  flex-flow: column wrap;
+  //display: flex;
+  //flex-flow: column wrap;
 
   &__wrapper {
-    width: 1242px;
+    max-width: 1260px;
     margin: 0 auto;
+    width: 100%;
 
     @include breakpoint($tablet_resolution) {
-      width: 768px;
+      max-width: 768px;
+      width: 100%
     }
   }
 
@@ -18,8 +20,16 @@
     align-items: flex-start;
     padding: 0 0 12px 0;
 
+    @include breakpoint($laptop_resolution) {
+      justify-content: space-around;
+    }
+
     @include breakpoint($tablet_resolution) {
       padding: 0;
+    }
+
+    @include breakpoint(390px 0) {
+      justify-content: space-around;
     }
 
     &:after {
@@ -29,6 +39,11 @@
       background: #dddfdf;
       height: 1px;
       top: 99px;
+      left: 0;
+
+      @include breakpoint(1240px 0) {
+        display: none;
+      }
 
       @include breakpoint($tablet_resolution) {
         width: 95%;
@@ -44,8 +59,22 @@
     display: flex;
     flex-flow: row wrap;
 
+    @include breakpoint($laptop_resolution) {
+      justify-content: space-around;
+    }
+
+    @include breakpoint(741px 360px) {
+      margin-top: -27px;
+    }
+
+
     @include breakpoint($tablet_resolution) {
       flex-flow: row-reverse wrap;
+    }
+
+    @include breakpoint(390px 0) {
+      margin-top: 15px;
+      justify-content: space-around;
     }
 
     &:after {
@@ -55,6 +84,11 @@
       background: #dddfdf;
       height: 1px;
       top: 53px;
+      left: 0;
+
+      @include breakpoint(1240px 0) {
+        display: none;
+      }
 
       @include breakpoint($tablet_resolution) {
         width: 95%;
@@ -65,14 +99,23 @@
   }
 
   &__navigation {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
+    //display: flex;
+    //flex-flow: row wrap;
+    //align-items: flex-start;
     margin: 15px 0 0 21px;
+
+    @include breakpoint($laptop_resolution) {
+      margin-left: 5px;
+    }
+
 
     @include breakpoint($tablet_resolution) {
       order: 3;
       margin: 25px 5% 0 0;
+    }
+
+    @include breakpoint(730px 0) {
+      margin: 25px 25px 0 25px;
     }
   }
 
@@ -82,6 +125,10 @@
     @include breakpoint($tablet_resolution) {
       margin: 24px 0 0 28px;
     }
+
+    @include breakpoint($laptop_resolution) {
+      margin-left: 5px;
+    }
   }
 
   &__search {
@@ -89,6 +136,14 @@
 
     @include breakpoint($tablet_resolution) {
       margin: 23px 0 0 -25px;
+    }
+
+    @include breakpoint($laptop_resolution) {
+      margin-left: 5px;
+    }
+
+    @include breakpoint(470px 0) {
+      margin-left: 5px;
     }
   }
 
@@ -99,6 +154,10 @@
     @include breakpoint($tablet_resolution) {
       margin: 21px 0 0 27px;
     }
+
+    @include breakpoint($laptop_resolution) {
+      margin-left: 5px;
+    }
   }
 
   &__shedule {
@@ -107,19 +166,40 @@
     @include breakpoint($tablet_resolution) {
       margin: 20px 0 0 13px;
     }
+
+    @include breakpoint($laptop_resolution) {
+      margin-left: 5px;
+    }
   }
 
   &__cart {
     margin: 15px 0 0 136px;
 
+    @include breakpoint($laptop_resolution) {
+     margin-left: 45px;
+    }
+
     @include breakpoint($tablet_resolution) {
       order: 2;
-      margin: 1px 38px 0 0;
+      margin: 1px 24px 0 0;
     }
+
+    @include breakpoint($tablet_resolution) {
+      margin-left: 55%;
+    }
+
+    @include breakpoint(390px 0) {
+      margin-left: 50px;
+    }
+
   }
 
   &__enter {
     margin: 16px 0 0 47px;
+
+    @include breakpoint($tablet_resolution) {
+      margin-left: 45px;
+    }
 
     @include breakpoint($tablet_resolution) {
       order: 1;
@@ -217,16 +297,25 @@
       font-weight: bold;
     }
 
+    @include breakpoint(730px 0) {
+      padding-top: 5px !important;
+    }
+
     &--main {
       position: relative;
       padding: 0 20px 0 28px;
       background: url("../img/menu-icon.png") no-repeat 0% 5px, url("../img/catalog-icon.png") no-repeat 100% 7px;
       max-width: 183px;
+      @extend .navigation__item;
     }
 
     &--regular {
       margin: 0 0 0 22px;
       @extend .navigation__item;
+
+      @include breakpoint($laptop_resolution) {
+        margin-left: 15px;
+      }
 
       @include breakpoint($tablet_resolution) {
         margin: 0 0 0 28px;
@@ -369,6 +458,10 @@
         top: 2px;
         background-size: 15px;
       }
+
+      //@include breakpoint(530px 0) {
+      //  display: none;
+      //}
     }
   }
 
@@ -392,6 +485,8 @@
 
     @include breakpoint($tablet_resolution) {
       font-size: 0.8em;
+      padding: 3px 0 0 0;
+      margin: 0 0 0 8px;
     }
   }
 
@@ -402,7 +497,7 @@
 
     @include breakpoint($tablet_resolution) {
       font-size: 1em;
-      padding: 0px 0 0 4px;
+      padding: 1px 14px 0 4px;
     }
   }
 
