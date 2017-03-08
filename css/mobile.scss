@@ -1,0 +1,64 @@
+.header {
+    &__mob-wrapper {
+        position: fixed;
+        width: 100%;
+        max-width: 480px;
+
+          @include breakpoint(321px) {
+            display: none;
+          }
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+    background-color: #f0f1f6;
+    &__item {
+        width: 53px;
+        height: 40px;
+        &--menu {
+            background: url('../img/menu-icon-mob.png') no-repeat center;
+            background-color: #3eade2;
+        }
+
+        &--home{
+            background: url('../img/home-mob.png') no-repeat center;
+        }
+
+        &--search {
+            background: url('../img/loupe-mob.png') no-repeat center;
+        }
+
+        &--cart {
+            background: url('../img/cart-mob.png') no-repeat center;
+        }
+
+        &--enter {
+            background: url('../img/enter-mob.png') no-repeat center;
+        }
+
+        &--phone {
+            background: url('../img/phone-mob.png') no-repeat center;
+        }
+
+    }
+}
+
+.content {
+
+    @include breakpoint($mobile_resolution) {
+        padding-top: 53px !important;
+    }
+    &__mob-logo {
+        width: 191px;
+        margin: 0px 0 0 21px;
+        font-size: 0.91em;
+
+    @include breakpoint(321px) {
+      display: none;
+    }
+    }
+}

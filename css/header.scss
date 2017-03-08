@@ -7,9 +7,14 @@
     margin: 0 auto;
     width: 100%;
 
+
     @include breakpoint($tablet_resolution) {
       max-width: 768px;
-      width: 100%
+      width: 100%;
+    }
+
+    @include breakpoint($mobile_resolution) {
+      display: none;
     }
   }
 
@@ -223,6 +228,7 @@
   }
 
   &__img {
+    width: 100%;
 
     @include breakpoint($tablet_resolution) {
       width: 74%;

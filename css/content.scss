@@ -15,6 +15,10 @@
     @include breakpoint($tablet_resolution) {
       padding: 0;
     }
+
+    @include breakpoint($mobile_resolution) {
+      padding-top: 17px;
+    }
   }
 }
 
@@ -27,10 +31,17 @@
   margin: 0 auto;
 
   @include breakpoint($tablet_resolution) {
-    height: 100px;
+    //height: 100px;
     max-width: 752px;
     width: 100%;
   }
+
+  @include breakpoint($mobile_resolution) {
+    //height: 125px;
+    max-width: 340px;
+    width: 100%;
+  }
+
   &__item-1 {
     height: 326px;
     background: url(../img/slider-1.jpg) no-repeat center center;
@@ -38,6 +49,10 @@
 
     @include breakpoint($tablet_resolution) {
       height: 165px;
+    }
+
+    @include breakpoint($mobile_resolution) {
+      height: 125px;
     }
   }
 
@@ -49,6 +64,10 @@
     @include breakpoint($tablet_resolution) {
       height: 165px;
     }
+
+    @include breakpoint($mobile_resolution) {
+      height: 125px;
+    }
   }
 
   &__item-3 {
@@ -58,6 +77,10 @@
 
     @include breakpoint($tablet_resolution) {
       height: 165px;
+    }
+
+    @include breakpoint($mobile_resolution) {
+      height: 125px;
     }
   }
 
@@ -76,6 +99,11 @@
         background-size: 7px;
         background-position: 5px;
       }
+
+      @include breakpoint($mobile_resolution) {
+        background-size: 9px;
+        background-position: 3px;
+      }
     }
 
     @include breakpoint($tablet_resolution) {
@@ -85,6 +113,15 @@
       left: 9px;
       background-size: 7px;
       background-position: 5px;
+    }
+
+    @include breakpoint($mobile_resolution) {
+      height: 28px;
+      width: 20px;
+      top: 64px;
+      background-position: 4px;
+      cursor: pointer;
+      background-size: 7px;
     }
   }
 
@@ -104,6 +141,11 @@
         background-size: 7px;
         background-position: 5px;
       }
+
+      @include breakpoint($mobile_resolution) {
+        background-size: 8px;
+        background-position: 5px;
+      }
     }
 
     @include breakpoint($tablet_resolution) {
@@ -113,6 +155,15 @@
       right: 8px;
       background-size: 7px;
       background-position: 5px;
+    }
+
+    @include breakpoint($mobile_resolution) {
+      height: 28px;
+      width: 20px;
+      top: 64px;
+      background-position: 7px;
+      cursor: pointer;
+      background-size: 7px;
     }
   }
 
@@ -133,6 +184,14 @@
       top: 49px;
       left: 43px;
       line-height: 1.01em;
+    }
+
+    @include breakpoint($mobile_resolution) {
+      padding: 3px 6px 3px 7px;
+      font: 1.27em 'PT Sans';
+      top: 42px;
+      left: 27px;
+      line-height: 1.19em;
     }
   }
 }
