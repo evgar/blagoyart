@@ -3,7 +3,7 @@
   width: 100%;
   margin: 0 auto;
 
-  @include breakpoint($tablet_resolution) {
+  @include breakpoint($laptop_resolution) {
     max-width: 768px;
     width: 100%;
   }
@@ -12,7 +12,7 @@
     position: relative;
     padding: 10px 0 0 0;
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       padding: 0;
     }
 
@@ -30,15 +30,13 @@
   width: 100%;
   margin: 0 auto;
 
-  @include breakpoint($tablet_resolution) {
-    //height: 100px;
+  @include breakpoint($laptop_resolution) {
     max-width: 752px;
     width: 100%;
   }
 
   @include breakpoint($mobile_resolution) {
-    //height: 125px;
-    max-width: 340px;
+    max-width: 768px;
     width: 100%;
   }
 
@@ -47,7 +45,7 @@
     background: url(../img/slider-1.jpg) no-repeat center center;
     background-size: cover;
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       height: 165px;
     }
 
@@ -61,7 +59,7 @@
     height: 326px;
     background-size: cover;
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       height: 165px;
     }
 
@@ -75,7 +73,7 @@
     height: 326px;
     background-size: cover;
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       height: 165px;
     }
 
@@ -95,7 +93,7 @@
     &:hover {
       background: rgba(246, 245, 244, 0.88) url(../img/arrow-left-hover.png) no-repeat 9px;
 
-      @include breakpoint($tablet_resolution) {
+      @include breakpoint($laptop_resolution) {
         background-size: 7px;
         background-position: 5px;
       }
@@ -106,7 +104,7 @@
       }
     }
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       height: 65px;
       width: 17px;
       top: 49px;
@@ -137,7 +135,7 @@
     &:hover {
       background: rgba(246, 245, 244, 0.88) url(../img/arrow-right-hover.png) no-repeat 12px;
 
-      @include breakpoint($tablet_resolution) {
+      @include breakpoint($laptop_resolution) {
         background-size: 7px;
         background-position: 5px;
       }
@@ -148,7 +146,7 @@
       }
     }
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       height: 65px;
       width: 17px;
       top: 49px;
@@ -178,7 +176,7 @@
     left: 71px;
     line-height: 1.19em;
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       padding: 7px 23px 8px 17px;
       font: 1.9em 'PT Sans';
       top: 49px;
@@ -205,10 +203,6 @@
   justify-content: center;
   padding: 45px 0 0 0;
   list-style: none;
-
-  //@include breakpoint($tablet_resolution) {
-  //  display: none;
-  //}
 }
 
 .slick-dots li button:before {

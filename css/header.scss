@@ -1,6 +1,4 @@
 .header {
-  //display: flex;
-  //flex-flow: column wrap;
 
   &__wrapper {
     max-width: 1260px;
@@ -8,7 +6,7 @@
     width: 100%;
 
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       max-width: 768px;
       width: 100%;
     }
@@ -26,10 +24,6 @@
     padding: 0 0 12px 0;
 
     @include breakpoint($laptop_resolution) {
-      justify-content: space-around;
-    }
-
-    @include breakpoint($tablet_resolution) {
       padding: 0;
     }
 
@@ -50,7 +44,7 @@
         display: none;
       }
 
-      @include breakpoint($tablet_resolution) {
+      @include breakpoint($laptop_resolution) {
         width: 95%;
         top: 93px;
         left: 14px;
@@ -64,16 +58,12 @@
     display: flex;
     flex-flow: row wrap;
 
-    @include breakpoint($laptop_resolution) {
-      justify-content: space-around;
-    }
-
     @include breakpoint(741px 360px) {
       margin-top: -27px;
     }
 
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       flex-flow: row-reverse wrap;
     }
 
@@ -95,7 +85,7 @@
         display: none;
       }
 
-      @include breakpoint($tablet_resolution) {
+      @include breakpoint($laptop_resolution) {
         width: 95%;
         top: 78px;
         left: 14px;
@@ -104,51 +94,28 @@
   }
 
   &__navigation {
-    //display: flex;
-    //flex-flow: row wrap;
-    //align-items: flex-start;
     margin: 15px 0 0 21px;
 
     @include breakpoint($laptop_resolution) {
-      margin-left: 5px;
-    }
-
-
-    @include breakpoint($tablet_resolution) {
       order: 3;
       margin: 25px 5% 0 0;
-    }
-
-    @include breakpoint(730px 0) {
-      margin: 25px 25px 0 25px;
     }
   }
 
   &__logo {
     margin: 34px 0 0 22px;
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       margin: 24px 0 0 28px;
     }
 
-    @include breakpoint($laptop_resolution) {
-      margin-left: 5px;
-    }
   }
 
   &__search {
     margin: 29px 0 0 43px;
 
-    @include breakpoint($tablet_resolution) {
-      margin: 23px 0 0 -25px;
-    }
-
     @include breakpoint($laptop_resolution) {
-      margin-left: 5px;
-    }
-
-    @include breakpoint(470px 0) {
-      margin-left: 5px;
+      margin: 23px 0 0 -25px;
     }
   }
 
@@ -156,45 +123,26 @@
     margin: 35px 0 0 90px;
 
 
-    @include breakpoint($tablet_resolution) {
-      margin: 21px 0 0 27px;
-    }
-
     @include breakpoint($laptop_resolution) {
-      margin-left: 5px;
+      margin: 21px 0 0 27px;
     }
   }
 
   &__shedule {
     margin: 35px 0 0 13px;
 
-    @include breakpoint($tablet_resolution) {
-      margin: 20px 0 0 13px;
-    }
-
     @include breakpoint($laptop_resolution) {
-      margin-left: 5px;
+      margin: 20px 0 0 13px;
     }
   }
 
   &__cart {
     margin: 15px 0 0 136px;
 
-    @include breakpoint($laptop_resolution) {
-     margin-left: 45px;
-    }
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       order: 2;
       margin: 1px 24px 0 0;
-    }
-
-    @include breakpoint($tablet_resolution) {
-      margin-left: 55%;
-    }
-
-    @include breakpoint(390px 0) {
-      margin-left: 50px;
     }
 
   }
@@ -202,11 +150,7 @@
   &__enter {
     margin: 16px 0 0 47px;
 
-    @include breakpoint($tablet_resolution) {
-      margin-left: 45px;
-    }
-
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       order: 1;
       margin: 1px 31px 0 0;
     }
@@ -219,9 +163,9 @@
     color: #747688;
     font: 1.077em 'PT Sans';
     padding: 0;
-    margin: 3px 0 0 0px;
+    margin: 3px 0 0 0;
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       font: 1em 'PT Sans';
       margin: -1px 0 0 0px;
     }
@@ -230,7 +174,7 @@
   &__img {
     width: 100%;
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       width: 74%;
     }
   }
@@ -240,7 +184,7 @@
 .search {
   width: 496px;
 
-  @include breakpoint($tablet_resolution) {
+  @include breakpoint($laptop_resolution) {
     width: 221px;
   }
 
@@ -253,7 +197,7 @@
     background: url(../img/loupe.png) no-repeat 98.3% 9px;
     padding: 10px 0 10px 9px;
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       padding: 5px 0 5px 9px;
       background-size: 11px;
       background-position: 96.3% 9px;
@@ -265,7 +209,7 @@
   font: 1.77em 'PT Sans';
   color: #181616;
 
-  @include breakpoint($tablet_resolution) {
+  @include breakpoint($laptop_resolution) {
     font: 1.2em 'PT Sans';
   }
 }
@@ -281,7 +225,7 @@
     color: #2b3056;
   }
 
-  @include breakpoint($tablet_resolution) {
+  @include breakpoint($laptop_resolution) {
     font: 0.8em 'PT Sans';
   }
 }
@@ -298,13 +242,9 @@
     text-transform: uppercase;
     list-style-type: none;
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       font: 0.97em 'PT Sans';
       font-weight: bold;
-    }
-
-    @include breakpoint(730px 0) {
-      padding-top: 5px !important;
     }
 
     &--main {
@@ -320,10 +260,6 @@
       @extend .navigation__item;
 
       @include breakpoint($laptop_resolution) {
-        margin-left: 15px;
-      }
-
-      @include breakpoint($tablet_resolution) {
         margin: 0 0 0 28px;
         font: 0.97em 'PT Sans';
         font-weight: bold;
@@ -348,7 +284,7 @@
     -moz-box-shadow: 2px 3px 1px rgba(108,104,104,.33);
     box-shadow: 2px 3px 1px rgba(108,104,104,.33);
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       top: 41px;
       left: 1px;
     }
@@ -370,7 +306,7 @@
     padding: 3px 0 6px 0;
     letter-spacing: -0.6px;
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       padding: 4px 0 4px 0;
       font-size: 1.3em;
     }
@@ -422,7 +358,7 @@
     margin: 2px 0 8px 16px;
     word-spacing: 5px;
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       margin: 4px 0 8px 18px;
     }
   }
@@ -433,7 +369,7 @@
   font: 1em 'PT Sans';
   color: #cb944c;
 
-  @include breakpoint($tablet_resolution) {
+  @include breakpoint($laptop_resolution) {
     font: 0.9em 'PT Sans';
     font-weight: bold;
     word-spacing: 3px;
@@ -459,15 +395,11 @@
       left: -36px;
       top: -1px;
 
-      @include breakpoint($tablet_resolution) {
+      @include breakpoint($laptop_resolution) {
         left: -21px;
         top: 2px;
         background-size: 15px;
       }
-
-      //@include breakpoint(530px 0) {
-      //  display: none;
-      //}
     }
   }
 
@@ -477,7 +409,7 @@
     padding: 4px;
     color: white;
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       padding: 4px 3px;
       font-weight: bold;
       font-size: 0.8em;
@@ -489,7 +421,7 @@
     font-weight: bold;
     padding: 2px 0 0 8px;
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       font-size: 0.8em;
       padding: 3px 0 0 0;
       margin: 0 0 0 8px;
@@ -501,7 +433,7 @@
     font-weight: bold;
     padding-left: 7px;
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       font-size: 1em;
       padding: 1px 14px 0 4px;
     }
@@ -528,14 +460,14 @@
     top: 1px;
     left: -26px;
 
-    @include breakpoint($tablet_resolution) {
+    @include breakpoint($laptop_resolution) {
       top: 1px;
       left: -21px;
       background-size: 16px 14px;
     }
   }
 
-  @include breakpoint($tablet_resolution) {
+  @include breakpoint($laptop_resolution) {
     font-size: 1em;
   }
 }
