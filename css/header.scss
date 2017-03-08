@@ -18,8 +18,15 @@
 
   &__info-row-top {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     padding: 0 0 12px 0;
 
@@ -28,6 +35,7 @@
     }
 
     @include breakpoint(390px 0) {
+      -ms-flex-pack: distribute;
       justify-content: space-around;
     }
 
@@ -55,7 +63,12 @@
 
   &__info-row-bottom {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
 
     @include breakpoint(741px 360px) {
@@ -64,11 +77,15 @@
 
 
     @include breakpoint($laptop_resolution) {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse wrap;
       flex-flow: row-reverse wrap;
     }
 
     @include breakpoint(390px 0) {
       margin-top: 15px;
+      -ms-flex-pack: distribute;
       justify-content: space-around;
     }
 
@@ -97,6 +114,8 @@
     margin: 15px 0 0 21px;
 
     @include breakpoint($laptop_resolution) {
+      -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
       order: 3;
       margin: 25px 5% 0 0;
     }
@@ -141,6 +160,8 @@
 
 
     @include breakpoint($laptop_resolution) {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
       order: 2;
       margin: 1px 24px 0 0;
     }
@@ -151,6 +172,8 @@
     margin: 16px 0 0 47px;
 
     @include breakpoint($laptop_resolution) {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
       order: 1;
       margin: 1px 31px 0 0;
     }
@@ -231,7 +254,12 @@
 }
 
 .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   cursor: pointer;
 
@@ -298,6 +326,8 @@
 
   &__subitem {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font: 1.02em 'PT Sans';
     color: #666666;
@@ -380,7 +410,12 @@
 .cart {
 
   &__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     position: relative;
     color: #252a54;
