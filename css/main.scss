@@ -1,6 +1,4 @@
 @import "lib/_breakpoint";
-@import "variables";
-@import "header";
-@import "content";
-@import "mobile";
-
+@import "helpers/variables";
+@import "vendor/header";
+@import "vendor/mobile";

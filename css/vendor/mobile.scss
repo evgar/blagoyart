@@ -55,7 +55,7 @@
 
 .content {
 
-    @include breakpoint($mobile_resolution) {
+    @include breakpoint($extra-small) {
         padding-top: 53px !important;
     }
     &__mob-logo {

@@ -2,8 +2,8 @@ $(document).ready(function () {
     $('.slider').slick({
         dots: true,
         fade: true,
-        // autoplay: true,
-        // autoplaySpeed: 5000,
+        autoplay: true,
+        autoplaySpeed: 5000,
         speed: 1000,
         responsive: true,
         prevArrow: '.slider__prev-button',
