@@ -1,4 +1,7 @@
 .header {
+  @include breakpoint(1260px  992px) {
+    font-size: 11px;
+  }
 
   &__wrapper {
     max-width: 1260px;
@@ -111,7 +114,7 @@
   }
 
   &__navigation {
-    margin: 15px 0 0 21px;
+    margin: 18px 0 0 2.4%;
 
     @include breakpoint($small) {
       -webkit-box-ordinal-group: 4;
@@ -122,24 +125,46 @@
   }
 
   &__logo {
-    margin: 34px 0 0 22px;
+    margin: 33px 0 0 1.5%;
+    width: 19.6%;
 
     @include breakpoint($small) {
       margin: 24px 0 0 28px;
+      width: 180px;
     }
 
   }
 
   &__search {
-    margin: 29px 0 0 43px;
+      margin: 29px 0 0 3.4%;
+
+    @include breakpoint($medium) {
+      width: 39.4%;
+    }
+
+    @include breakpoint(1260px  992px) {
+      margin-left: 1%;
+    }
 
     @include breakpoint($small) {
-      margin: 23px 0 0 -25px;
+      margin: 24px 0 0 41px;
     }
   }
 
   &__contacts {
-    margin: 35px 0 0 90px;
+      margin: 34px 0 0 7.2%;
+
+      @include breakpoint($medium) {
+        width: 15.1%;
+      }
+
+      @include breakpoint(1260px  992px) {
+        margin-left: 1%;
+      }
+
+      @include  breakpoint($small) {
+        margin: 24px 0 0 40px;
+      }
 
 
     @include breakpoint($small) {
@@ -148,15 +173,24 @@
   }
 
   &__shedule {
-    margin: 35px 0 0 13px;
+    margin: 35px 0 0 1%;
+
+    @include breakpoint($medium) {
+      width: 10.9%;
+    }
 
     @include breakpoint($small) {
       margin: 20px 0 0 13px;
+      width: 13.9%;
     }
   }
 
   &__cart {
-    margin: 15px 0 0 136px;
+    margin: 16px 0 0 10.7%;
+
+    @include breakpoint(1260px  992px) {
+      margin-left: 4%;
+    }
 
 
     @include breakpoint($small) {
@@ -169,7 +203,7 @@
   }
 
   &__enter {
-    margin: 16px 0 0 47px;
+    margin: 16px 0 0 3.8%;
 
     @include breakpoint($small) {
       -webkit-box-ordinal-group: 2;
@@ -198,14 +232,13 @@
     width: 100%;
 
     @include breakpoint($small) {
-      width: 74%;
     }
   }
 
 }
 
 .search {
-  width: 496px;
+  width: 100%;
 
   @include breakpoint($small) {
     width: 221px;
@@ -232,6 +265,10 @@
   font: 1.77em 'PT Sans';
   color: #181616;
 
+  @include breakpoint(1260px  992px) {
+    font: 1.5em 'PT Sans';
+  }
+
   @include breakpoint($small) {
     font: 1.2em 'PT Sans';
   }
@@ -241,7 +278,7 @@
   font: 1.077em 'PT Sans';
   &__time {
     padding: 0 0 0 0;
-    color: #cb944c;
+    color: #d2a46c;
   }
   &__delivery {
     padding: 2px 0 0 0;
@@ -286,6 +323,10 @@
     &--regular {
       margin: 0 0 0 22px;
       @extend .navigation__item;
+
+      @include breakpoint(1260px  992px) {
+        margin-left: 15px;
+      }
 
       @include breakpoint($small) {
         margin: 0 0 0 28px;
